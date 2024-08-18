@@ -1,6 +1,6 @@
-/* General Styles */
+/* Общие стили */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -11,23 +11,6 @@ body {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-nav {
-    background-color: #333;
-    padding: 1rem 0;
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
 }
 
 header {
@@ -100,23 +83,19 @@ footer {
     padding: 20px 0;
 }
 
-/* Dark/Light Theme Toggle */
+/* Темная/Светлая тема */
 .dark-theme {
     background-color: #121212;
     color: #e0e0e0;
 }
 
-.dark-theme nav {
-    background-color: #1c1c1c;
+.dark-theme header {
+    background: linear-gradient(135deg, #333, #555);
 }
 
 .dark-theme .cta-button {
     background: #333;
     color: #fff;
-}
-
-.dark-theme header {
-    background: linear-gradient(135deg, #333, #555);
 }
 
 .dark-theme footer {
