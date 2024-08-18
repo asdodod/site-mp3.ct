@@ -121,23 +121,3 @@ footer p {
     font-size: 1.1rem;
 }
 
-/* Тема тёмного режима */
-body.dark-theme {
-    background: linear-gradient(135deg, #0A0A0A, #1A1A1A);
-}
-
-body.dark-theme header {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-body.dark-theme .cta-button {
-    background: linear-gradient(135deg, #FF6F61, #FF3D00);
-}
-
-body.dark-theme #commands {
-    background-color: #2D3A4C;
-}
-
-body.dark-theme .command {
-    background: #2A3C4C;
-}
