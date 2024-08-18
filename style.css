@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+    background: linear-gradient(135deg, #141E30, #243B55);
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -23,44 +23,47 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
     color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 40px;
     color: #d1d1d1;
 }
 
 .cta-button {
-    background: #0056b3;
+    background: linear-gradient(135deg, #36D1DC, #5B86E5);
     color: #fff;
-    padding: 15px 30px;
+    padding: 15px 40px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     transition: background 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
-    background: #0041a1;
+    background: linear-gradient(135deg, #5B86E5, #36D1DC);
     transform: scale(1.05);
 }
 
 #commands {
-    padding: 50px 20px;
-    background-color: #181818;
+    padding: 60px 20px;
+    background-color: #1C2833;
     text-align: center;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
 
 #commands h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 30px;
     color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .command-list {
@@ -70,26 +73,43 @@ header p {
 }
 
 .command {
-    background: #292929;
+    background: #2C3E50;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
 }
 
 .command h3 {
-    color: #00b0ff;
+    color: #00B0FF;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.command p {
+    color: #d1d1d1;
+}
+
+.command:hover {
+    transform: translateY(-5px);
 }
 
 #invite {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 footer {
-    background-color: #0d0d0d;
+    background-color: #141E30;
     color: #d1d1d1;
     text-align: center;
     padding: 20px 0;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
