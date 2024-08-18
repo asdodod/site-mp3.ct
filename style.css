@@ -3,8 +3,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
+    background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 .container {
@@ -16,44 +20,47 @@ body {
 header {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
-    color: #fff;
 }
 
 header h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 header p {
     font-size: 1.2rem;
     margin-bottom: 40px;
+    color: #d1d1d1;
 }
 
 .cta-button {
-    background: #fff;
-    color: #6e45e2;
+    background: #0056b3;
+    color: #fff;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1rem;
-    border-radius: 25px;
-    transition: background 0.3s, color 0.3s;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
-    background: #6e45e2;
-    color: #fff;
+    background: #0041a1;
+    transform: scale(1.05);
 }
 
 #commands {
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: #181818;
     text-align: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 
 #commands h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .command-list {
@@ -63,12 +70,16 @@ header p {
 }
 
 .command {
-    background: #fff;
+    background: #292929;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.command h3 {
+    color: #00b0ff;
 }
 
 #invite {
@@ -77,27 +88,8 @@ header p {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #0d0d0d;
+    color: #d1d1d1;
     text-align: center;
     padding: 20px 0;
-}
-
-/* Темная/Светлая тема */
-.dark-theme {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-theme header {
-    background: linear-gradient(135deg, #333, #555);
-}
-
-.dark-theme .cta-button {
-    background: #333;
-    color: #fff;
-}
-
-.dark-theme footer {
-    background-color: #1c1c1c;
 }
