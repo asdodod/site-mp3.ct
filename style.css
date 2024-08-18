@@ -1,57 +1,67 @@
+/* Подключение шрифта Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body {
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Легкий фон */
+    color: #333; /* Тёмный текст */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #ffffff; /* Белый фон */
+    color: #333; /* Тёмный текст */
+    padding: 40px 20px;
     text-align: center;
+    border-bottom: 1px solid #e0e0e0; /* Легкая граница снизу */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: 700;
 }
 
 header p {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 .add-to-server {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1em;
-    color: #fff;
-    background-color: #7289da;
+    color: #ffffff;
+    background-color: #007bff; /* Яркий акцентный цвет */
     text-decoration: none;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
 .add-to-server:hover {
-    background-color: #5b6eae;
+    background-color: #0056b3; /* Тёмный акцент при наведении */
 }
 
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff; /* Белый фон */
+    color: #333; /* Тёмный текст */
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0; /* Легкая граница сверху */
+    position: relative;
     bottom: 0;
     width: 100%;
 }
