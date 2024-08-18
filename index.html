@@ -3,14 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Your Discord Bot</title>
-    <link rel="stylesheet" href="style.css">  <!-- Подключаем файл стилей -->
+    <title>My Discord Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap">
 </head>
 <body>
-    <h1>Add My Discord Bot to Your Server</h1>
-    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" target="_blank">
-        <button>Add Bot</button>
-    </a>
-    <script src="script.js"></script>  <!-- Подключаем файл скриптов (если есть) -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">My Discord Bot</a>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#invite">Invite</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Enhance Your Server with My Discord Bot</h1>
+            <p>Discover the amazing features and functionalities that will make your server unique.</p>
+            <a href="#invite" class="cta-button">Invite Now</a>
+        </div>
+    </header>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Play Music</h3>
+            <p>Use `/play` to queue up songs and enjoy music in your voice channels.</p>
+        </div>
+        <div class="feature">
+            <h3>Join Channels</h3>
+            <p>Automatically join voice channels with a single command.</p>
+        </div>
+        <div class="feature">
+            <h3>Leave Channels</h3>
+            <p>Command the bot to leave your voice channels with ease.</p>
+        </div>
+    </section>
+
+    <section id="invite">
+        <h2>Invite the Bot</h2>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot" target="_blank">
+            <button>Invite to Your Server</button>
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For support, join our <a href="https://discord.gg/yourserverlink">Discord Server</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Discord Bot. All rights reserved.</p>
+    </footer>
 </body>
 </html>
