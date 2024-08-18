@@ -1,4 +1,3 @@
-/* Example of extracted styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
@@ -19,16 +18,19 @@ header {
     color: white;
     padding: 50px 0;
     text-align: center;
+    animation: slideIn 1s ease-in-out;
 }
 
 header h1 {
     font-size: 48px;
     margin: 0;
+    animation: fadeIn 2s;
 }
 
 header p {
     font-size: 18px;
     margin: 10px 0 30px;
+    animation: fadeInUp 2s;
 }
 
 .btn {
@@ -40,6 +42,7 @@ header p {
     border-radius: 25px;
     text-decoration: none;
     transition: background 0.3s;
+    animation: bounceIn 1s ease;
 }
 
 .btn:hover {
@@ -49,6 +52,7 @@ header p {
 section {
     padding: 60px 0;
     background-color: #f9f9f9;
+    animation: fadeIn 1.5s ease;
 }
 
 section h2 {
@@ -57,18 +61,66 @@ section h2 {
     color: #333;
 }
 
-section p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
 footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
+    animation: slideInUp 1.5s ease;
 }
 
 footer p {
     margin: 0;
 }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: ease-in-out;
+    }
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
