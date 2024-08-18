@@ -1,6 +1,6 @@
 /* Общие стили */
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #1F2A40, #3A4E6F);
@@ -48,6 +48,7 @@ header p {
     border-radius: 30px;
     box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-weight: 400; /* Установлен вес шрифта для кнопки */
 }
 
 .cta-button:hover {
@@ -99,6 +100,7 @@ header p {
 
 .command p {
     color: #d1d1d1;
+    font-weight: 400; /* Установлен вес шрифта для текста команд */
 }
 
 .command:hover {
@@ -122,4 +124,5 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.1rem;
+    font-weight: 400; /* Установлен вес шрифта для текста в футере */
 }
