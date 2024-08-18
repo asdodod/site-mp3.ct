@@ -3,12 +3,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #141E30, #243B55);
+    background: linear-gradient(135deg, #1F2A40, #3A4E6F);
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    transition: background 0.5s;
 }
 
 .container {
@@ -19,48 +20,53 @@ body {
 
 header {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0 60px 60px;
 }
 
 header h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 20px;
     color: #ffffff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 40px;
-    color: #d1d1d1;
+    color: #e0e0e0;
 }
 
 .cta-button {
-    background: linear-gradient(135deg, #36D1DC, #5B86E5);
+    background: linear-gradient(135deg, #FF6F61, #FF3D00);
     color: #fff;
     padding: 15px 40px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 30px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #5B86E5, #36D1DC);
+    background: linear-gradient(135deg, #FF3D00, #FF6F61);
     transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 #commands {
-    padding: 60px 20px;
-    background-color: #1C2833;
+    padding: 80px 20px;
+    background-color: #2C3E50;
     text-align: center;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #commands h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 30px;
     color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
@@ -73,19 +79,19 @@ header p {
 }
 
 .command {
-    background: #2C3E50;
+    background: #34495E;
     padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    max-width: 300px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
+    margin: 15px;
+    border-radius: 15px;
+    max-width: 320px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .command h3 {
     color: #00B0FF;
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .command p {
@@ -93,7 +99,8 @@ header p {
 }
 
 .command:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
 }
 
 #invite {
@@ -102,7 +109,7 @@ header p {
 }
 
 footer {
-    background-color: #141E30;
+    background-color: #1F2A40;
     color: #d1d1d1;
     text-align: center;
     padding: 20px 0;
@@ -111,5 +118,26 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Тема тёмного режима */
+body.dark-theme {
+    background: linear-gradient(135deg, #0A0A0A, #1A1A1A);
+}
+
+body.dark-theme header {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-theme .cta-button {
+    background: linear-gradient(135deg, #FF6F61, #FF3D00);
+}
+
+body.dark-theme #commands {
+    background-color: #2D3A4C;
+}
+
+body.dark-theme .command {
+    background: #2A3C4C;
 }
