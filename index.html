@@ -5,38 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Discord Bot</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
-    <header>
+    <nav>
         <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="#home" class="logo">My Discord Bot</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#invite">Invite</a></li>
+                <li>
+                    <button id="theme-toggle">Toggle Theme</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
             <h1>Welcome to My Discord Bot</h1>
-            <p>Your ultimate solution for managing your Discord server with ease.</p>
-            <a href="#invite" class="cta-button">Get Started</a>
+            <p>The ultimate bot for managing your Discord server with ease.</p>
+            <a href="#invite" class="cta-button">Add to Server</a>
         </div>
     </header>
 
-    <section id="features">
+    <section id="commands">
         <div class="container">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Music Playback</h3>
-                <p>Seamlessly play music in your voice channels.</p>
-            </div>
-            <div class="feature">
-                <h3>Easy Commands</h3>
-                <p>Simple commands to join or leave voice channels.</p>
-            </div>
-            <div class="feature">
-                <h3>Customizable Settings</h3>
-                <p>Personalize the bot to fit your server's needs.</p>
+            <h2>Commands</h2>
+            <div class="command-list">
+                <div class="command">
+                    <h3>/play</h3>
+                    <p>Play music in your voice channel.</p>
+                </div>
+                <div class="command">
+                    <h3>/leave</h3>
+                    <p>Make the bot leave the voice channel.</p>
+                </div>
+                <!-- Add more commands here -->
             </div>
         </div>
     </section>
@@ -48,18 +53,13 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions? <a href="mailto:support@yourdomain.com">Contact our support team</a>.</p>
-        </div>
-    </section>
-
     <footer>
         <div class="container">
             <p>&copy; 2024 My Discord Bot. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
