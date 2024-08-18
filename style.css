@@ -29,6 +29,7 @@ header h1 {
     font-size: 4rem;
     margin-bottom: 20px;
     color: #ffffff;
+    font-weight: 400; /* Уменьшен вес шрифта для заголовка */
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -69,6 +70,7 @@ header p {
     font-size: 3.5rem;
     margin-bottom: 30px;
     color: #ffffff;
+    font-weight: 400; /* Уменьшен вес шрифта для заголовка */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -92,6 +94,7 @@ header p {
     color: #00B0FF;
     margin-bottom: 10px;
     font-size: 1.6rem;
+    font-weight: 400; /* Уменьшен вес шрифта для заголовка */
 }
 
 .command p {
@@ -120,4 +123,3 @@ footer p {
     margin: 0;
     font-size: 1.1rem;
 }
-
