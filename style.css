@@ -1,14 +1,5 @@
-/* Подключение кастомного шрифта */
-@font-face {
-    font-family: 'CustomFont';
-    src: url('https://example.com/fonts/customfont.woff2') format('woff2'),
-         url('https://example.com/fonts/customfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: 'CustomFont', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -64,3 +55,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
