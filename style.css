@@ -9,12 +9,17 @@ body {
     color: #333333; /* Тёмный текст */
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 header {
-    background-color: #f8f9fa; /* Светлый фон для заголовка */
+    background-color: #f4f4f4; /* Светлый фон для заголовка */
     color: #333333; /* Тёмный текст */
-    padding: 60px 20px;
+    padding: 60px 0;
     text-align: center;
-    border-bottom: 1px solid #e0e0e0; /* Легкая граница снизу */
 }
 
 header h1 {
@@ -48,9 +53,8 @@ header p {
 }
 
 main {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: auto;
+    padding: 60px 0;
+    background-color: #f4f4f4; /* Светлый фон для основной части */
 }
 
 section {
@@ -58,7 +62,7 @@ section {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 600;
     border-bottom: 2px solid #007bff; /* Линия под заголовками */
     padding-bottom: 10px;
@@ -76,7 +80,7 @@ ul li {
 }
 
 code {
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px 8px;
@@ -86,10 +90,10 @@ code {
 }
 
 footer {
-    background-color: #f8f9fa; /* Светлый фон для футера */
+    background-color: #ffffff; /* Белый фон для футера */
     color: #333333; /* Тёмный текст */
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     border-top: 1px solid #e0e0e0; /* Легкая граница сверху */
     position: relative;
     bottom: 0;
