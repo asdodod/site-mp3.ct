@@ -1,128 +1,57 @@
-/* Общие стили */
 body {
-    font-family: 'Poppins';
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1F2A40, #3A4E6F);
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    transition: background 0.5s;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 120px 20px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 0 0 60px 60px;
 }
 
 header h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    color: #ffffff;
-    font-weight: 400; /* Уменьшен вес шрифта для заголовка */
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    font-size: 2.5em;
 }
 
 header p {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-    color: #e0e0e0;
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
-.cta-button {
-    background: linear-gradient(135deg, #FF6F61, #FF3D00);
+.add-to-server {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
     color: #fff;
-    padding: 15px 40px;
+    background-color: #7289da;
     text-decoration: none;
-    font-size: 1.3rem;
-    border-radius: 30px;
-    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    font-weight: 400; /* Установлен вес шрифта для кнопки */
+    border-radius: 5px;
 }
 
-.cta-button:hover {
-    background: linear-gradient(135deg, #FF3D00, #FF6F61);
-    transform: scale(1.05);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+.add-to-server:hover {
+    background-color: #5b6eae;
 }
 
-#commands {
-    padding: 80px 20px;
-    background-color: #2C3E50;
-    text-align: center;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-#commands h2 {
-    font-size: 3.5rem;
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-weight: 400; /* Уменьшен вес шрифта для заголовка */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.command-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.command {
-    background: #34495E;
+main {
     padding: 20px;
-    margin: 15px;
-    border-radius: 15px;
-    max-width: 320px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.command h3 {
-    color: #00B0FF;
-    margin-bottom: 10px;
-    font-size: 1.6rem;
-    font-weight: 400; /* Уменьшен вес шрифта для заголовка */
-}
-
-.command p {
-    color: #d1d1d1;
-    font-weight: 400; /* Установлен вес шрифта для текста команд */
-}
-
-.command:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-}
-
-#invite {
-    padding: 60px 20px;
-    text-align: center;
+section {
+    margin-bottom: 20px;
 }
 
 footer {
-    background-color: #1F2A40;
-    color: #d1d1d1;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #333;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 400; /* Установлен вес шрифта для текста в футере */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
