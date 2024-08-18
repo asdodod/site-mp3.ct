@@ -1,44 +1,56 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e90ff, #00bfff); /* Градиентный фон от синего к более светлому голубому */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Пример градиента от темно-синего к светло-синему */
     color: #fff;
     margin: 0;
     padding: 0;
-    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 header {
-    padding: 2rem;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin: 0.5rem 0;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    margin: 0 0 2rem;
 }
 
 .add-bot-button {
     display: inline-block;
     background: #ff4500;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 2rem;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.add-bot-button:hover {
+    background: #e63946;
 }
 
 section#commands {
-    padding: 2rem;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 footer {
     background: #333;
     color: #fff;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
 }
-
