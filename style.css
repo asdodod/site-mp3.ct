@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    background: linear-gradient(135deg, #1e90ff, #00bfff); /* Градиентный фон от синего к более светлому голубому */
     color: #fff;
     margin: 0;
     padding: 0;
