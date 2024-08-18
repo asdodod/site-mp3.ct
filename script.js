@@ -1,3 +1,3 @@
-document.querySelector('button').addEventListener('click', function() {
-    alert('You are about to add the bot to your Discord server!');
+document.getElementById('theme-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
 });
