@@ -5,8 +5,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Легкий фон для всего сайта */
-    color: #333333; /* Тёмный текст */
+    background-color: #121212; /* Темный фон для всего сайта */
+    color: #e0e0e0; /* Светлый текст */
 }
 
 .container {
@@ -16,18 +16,18 @@ body {
 }
 
 header {
-    background-color: #ffffff; /* Белый фон для заголовка */
-    color: #333333; /* Тёмный текст */
+    background-color: #1f1f1f; /* Темный фон для заголовка */
+    color: #e0e0e0; /* Светлый текст */
     padding: 80px 0; /* Увеличенные отступы для улучшенного вида */
     text-align: center;
-    border-bottom: 2px solid #e0e0e0; /* Легкая граница снизу */
+    border-bottom: 2px solid #333; /* Темная граница снизу */
 }
 
 header h1 {
     margin: 0;
     font-size: 4em;
     font-weight: 700;
-    color: #007bff; /* Яркий цвет заголовка */
+    color: #1e90ff; /* Яркий цвет заголовка */
 }
 
 header p {
@@ -42,21 +42,21 @@ header p {
     padding: 15px 30px;
     font-size: 1.2em;
     color: #ffffff;
-    background-color: #007bff; /* Яркий акцентный цвет */
+    background-color: #1e90ff; /* Яркий акцентный цвет */
     text-decoration: none;
     border-radius: 6px; /* Скругленные углы */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Темная тень */
     transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
 }
 
 .add-to-server:hover {
-    background-color: #0056b3; /* Тёмный акцент при наведении */
+    background-color: #1c86ee; /* Темный акцент при наведении */
     transform: translateY(-4px); /* Легкий подъем при наведении */
 }
 
 main {
     padding: 60px 0;
-    background-color: #ffffff; /* Белый фон для основной части */
+    background-color: #1f1f1f; /* Темный фон для основной части */
 }
 
 section {
@@ -66,10 +66,10 @@ section {
 h2 {
     font-size: 2.5em;
     font-weight: 600;
-    border-bottom: 3px solid #007bff; /* Линия под заголовками */
+    border-bottom: 3px solid #1e90ff; /* Линия под заголовками */
     padding-bottom: 15px;
     margin-bottom: 30px;
-    color: #333333; /* Цвет заголовка */
+    color: #e0e0e0; /* Цвет заголовка */
 }
 
 ul {
@@ -83,19 +83,20 @@ ul li {
 }
 
 code {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    background-color: #333333;
+    border: 1px solid #444444;
     border-radius: 4px;
     padding: 6px 12px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
-    color: #007bff; /* Цвет для команд */
+    color: #1e90ff; /* Цвет для команд */
 }
 
 footer {
-    background-color: #ffffff; /* Белый фон для футера */
-    color: #333333; /* Тёмный текст */
+    background-color: #1f1f1f; /* Темный фон для футера */
+    color: #e0e0e0; /* Светлый текст */
     text-align: center;
     padding: 20px 0;
-    border-top: 2px solid #e0e0e0; /* Легкая граница сверху */
+    border-top: 2px solid #333; /* Темная граница сверху */
 }
+
