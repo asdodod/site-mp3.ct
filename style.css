@@ -40,7 +40,7 @@ header p {
     color: #fff;
     border-radius: 25px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     animation: bounceIn 1s ease;
 }
 
@@ -50,6 +50,8 @@ header p {
 
 .btn.blue-gradient:hover {
     background: linear-gradient(135deg, #4285f4, #1a73e8);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -64,14 +66,28 @@ section h2 {
     color: #333;
 }
 
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .feature-box {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
+    width: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 1s ease;
+}
+
+.feature-box i {
+    font-size: 36px;
+    color: #4285f4;
+    margin-bottom: 15px;
 }
 
 .feature-box:hover {
@@ -125,7 +141,6 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
-}
 
 @keyframes bounceIn {
     from, 20%, 40%, 60%, 80%, to {
