@@ -4,21 +4,20 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #333;
-    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    background-color: #f9f9f9; /* основной цвет фона */
+    position: relative;
+    overflow-x: hidden;
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px; /* высота градиента, можно регулировать */
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    z-index: -1;
 }
 
 header {
@@ -27,6 +26,8 @@ header {
     padding: 50px 0;
     text-align: center;
     animation: slideIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
@@ -65,8 +66,8 @@ header p {
 
 section {
     padding: 60px 0;
-    background-color: #f9f9f9;
-    animation: fadeIn 1.5s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .features-grid {
@@ -108,7 +109,8 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
-    animation: slideInUp 1.5s ease;
+    position: relative;
+    z-index: 1;
 }
 
 footer p {
