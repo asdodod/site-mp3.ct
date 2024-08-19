@@ -1,20 +1,28 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #333;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-color: transparent;
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -40,16 +48,17 @@ header p {
     color: #fff;
     border-radius: 25px;
     text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: background-position 0.5s, transform 0.3s, box-shadow 0.3s;
     animation: bounceIn 1s ease;
 }
 
 .btn.blue-gradient {
-    background: linear-gradient(135deg, #1a73e8, #4285f4);
+    background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+    background-size: 200% 200%;
 }
 
 .btn.blue-gradient:hover {
-    background: linear-gradient(135deg, #4285f4, #1a73e8);
+    background-position: right center;
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -58,12 +67,6 @@ section {
     padding: 60px 0;
     background-color: #f9f9f9;
     animation: fadeIn 1.5s ease;
-}
-
-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #333;
 }
 
 .features-grid {
